@@ -1,5 +1,5 @@
 /* eslint no-throw-literal: 1 */
-const AppException = require('../exception/JSONSchemaValidationException')
+const JSONSchemaValidationException = require('../exception/JSONSchemaValidationException')
 
 /**
 Schema example:
@@ -57,7 +57,7 @@ class JSONObjectValidator {
     exceptionArguments.titleKey = exceptionArguments.titleKey || this.options.defaultExceptionTitle
     exceptionArguments.bodyKey = exceptionArguments.bodyKey || this.options.defaultExceptionBody
 
-    return new AppException(exceptionArguments)
+    return new JSONSchemaValidationException(exceptionArguments)
   }
 
   validate () {

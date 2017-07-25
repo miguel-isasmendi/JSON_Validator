@@ -5,6 +5,7 @@
   "main": "validator.js",
   "scripts": {
     "lint": "eslint --color --ext .js src config",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- ./test/unit/spec --recursive",
     "test": "mocha ./test/unit/spec --recursive"
   },
   "repository": {
