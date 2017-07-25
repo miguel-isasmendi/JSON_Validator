@@ -1,0 +1,38 @@
+{
+  "name": "json_schema_validator",
+  "version": "0.0.1",
+  "description": "JSON validator",
+  "main": "validator.js",
+  "scripts": {
+    "lint": "eslint --color --ext .js src config",
+    "test": "mocha ./test/unit/spec --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguel-isasmendi/JSON_Validator.git"
+  },
+  "keywords": [
+    "JSON",
+    "validation",
+    "Schema"
+  ],
+  "author": "Miguel Darío Isasmendi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguel-isasmendi/JSON_Validator/issues"
+  },
+  "homepage": "https://github.com/miguel-isasmendi/JSON_Validator#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.19.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-friendly-formatter": "2.0.7",
+    "eslint-mocha": "0.2.2",
+    "eslint-plugin-standard": "3.0.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-node": "4.2.2",
+    "eslint-plugin-promise": "3.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.3.0"
+  }
+}
